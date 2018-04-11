@@ -13,5 +13,5 @@ tomcat::instance { 'default':
 }
 tomcat::war { 'hello-world.war':
   catalina_base => '/opt/tomcat',
-  war_source    => 'http://$nexus_ip:8081/nexus/content/repositories/releases/com/efsavage/hello-world-war/$package_version/hello-world-war-$package_version.war',
+  war_source    => "http://$nexus_ip:8081/nexus/content/repositories/releases/com/efsavage/hello-world-war/$package_version/hello-world-war-$package_version.war",
 }
